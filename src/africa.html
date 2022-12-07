@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Africa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/africa.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar nav-tabs navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <!--Header-->
+            <a class="navbar-brand" href="index.html">Bestiary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Links-->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./americas.html">Americas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./asia.html">Asia Pacific</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./europe.html">Europe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./africa.html">Africa/Middle East</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./all.html">All</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Main Content-->
+    <div class="container-fluid" style="width: 100%; margin: 15px 0;">
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner" style="height: 400px;">
+                <div class="carousel-item active" style="background-image: url(https://cdn.pixabay.com/photo/2018/01/25/13/25/outdoors-3106126__480.jpg); background-position: 50%;">
+                    <div class="mask align-content-center" style="height: 100%;">
+                        <div class="d-flex h-100">
+                            <div class="text-white carousel-text">
+                                <h1 class="mb-3">All Beasts</h1>
+                                <h4 class="mb-3 d-none d-md-block">The Ultimate World Beast Dictionary</h4>
+                                <a class="btn btn-outline-light btn-lg" href="all.html" role="button" id="explore">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(https://cdn.pixabay.com/photo/2018/05/17/18/32/map-3409359__480.jpg);">
+                    <div class="mask align-content-center" style="background-color: rgba(0, 0, 0, 0.6); height: 100%;">
+                        <div class="d-flex h-100">
+                            <div class="text-white carousel-text">
+                                <h1 class="mb-3">American Beasts</h1>
+                                <h4 class="mb-3 d-none d-md-block">The Ultimate Beast Dictionary of the American Region</h4>
+                                <a class="btn btn-outline-light btn-lg" href="americas.html" role="button" id="explore">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item" style="background-image: url(https://asiasociety.org/sites/default/files/styles/1200w/public/M/map_southeast_asia.jpg);">
+                    <div class="mask align-content-center" style="background-color: rgba(0, 0, 0, 0.6); height: 100%;">
+                        <div class="d-flex h-100">
+                            <div class="text-white carousel-text">
+                                <h1 class="mb-3">Asia Pacific Beasts</h1>
+                                <h4 class="mb-3 d-none d-md-block">The Ultimate Beast Dictionary of the Asia Pacific Region</h4>
+                                <a class="btn btn-outline-light btn-lg" href="asia.html" role="button" id="explore">Explore</a>
+                                <p class="caption">Background Image from https://asiasociety.org/education/introduction-southeast-asia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url(https://cdn.pixabay.com/photo/2018/06/18/23/03/europe-3483539_1280.jpg);">
+                    <div class="mask align-content-center" style="background-color: rgba(0, 0, 0, 0.6); height: 100%;">
+                        <div class="d-flex h-100">
+                            <div class="text-white carousel-text">
+                                <h1 class="mb-3">Europe</h1>
+                                <h4 class="mb-3 d-none d-md-block">The Ultimate Beast Dictionary of the European Region</h4>
+                                <a class="btn btn-outline-light btn-lg" href="europe.html" role="button" id="explore">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Headings-->
+        <h1>African & Middle Eastern Monsters</h1>
+        <h3>Total List of all African & Middle Eastern monsters that we could find.</h3>
+        <!--Table-->
+        <table class="table table-striped table-hover table-responsive"></table>
+        <p class="attribute">Data Provided by Evyn Olney</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-light text-center">
+        <h4>2022 Braxton Kotter</h4>
+    </div>
+</body>
+
+</html>
